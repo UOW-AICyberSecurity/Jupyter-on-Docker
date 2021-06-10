@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  jupyter_notebook:
+    restart: always
+    image: 'jupyter-notebook:uow-rsaic'
+    build:
+      context: '.'
+      dockerfile: dockerfile
+      cache_from:
+        - 'jupyter-notebook:uow-rsaic'
+    volumes: 
+      - './:/home/jupyter/code/'
+    ports:
+      - '8888:8888'
+    entrypoint: ['jupyter','notebook','--no-browser',"--ip='*'"]
