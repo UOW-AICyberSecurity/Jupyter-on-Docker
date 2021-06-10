@@ -12,7 +12,7 @@ RUN pip --version
 
 COPY requirement.txt /requirement.txt
 
-RUN pip install -r /requirement.txt
+RUN pip3 install -r /requirement.txt
 
 RUN useradd -ms /bin/bash jupyter
 
