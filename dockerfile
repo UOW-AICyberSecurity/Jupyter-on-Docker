@@ -12,6 +12,8 @@ RUN pip --version
 
 COPY requirement.txt /requirement.txt
 
+RUN pip3 install -Iv numpy==1.13.3
+
 RUN pip3 install -r /requirement.txt
 
 RUN useradd -ms /bin/bash jupyter
