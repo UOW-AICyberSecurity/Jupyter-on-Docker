@@ -2,12 +2,12 @@ version: '3.3'
 services:
   jupyter_notebook:
     restart: always
-    image: 'jupyter-notebook:uow-rsaic'
+    image: 'ezeutno/jupyter-cyber:uow-rsaic'
     build:
       context: '.'
       dockerfile: dockerfile
       cache_from:
-        - 'jupyter-notebook:uow-rsaic'
+        - 'ezeutno/jupyter-cyber:uow-rsaic'
     volumes: 
       - './:/home/jupyter/code/'
     ports:
