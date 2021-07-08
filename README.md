@@ -11,7 +11,7 @@ A discussion group to get indept with AI in CyberSecurity Implementation
 docker-compose up -d
 ```
 
-# How to akses it
+# How to access it
 Go to http://localhost:8888
 
 # Notes
